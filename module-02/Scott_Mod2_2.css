@@ -1,0 +1,59 @@
+/* Base font settings */
+html, body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Paragraph styles */
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+/* Headings */
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/* Address section */
+address {
+    text-align: center;
+}
+
+/* Website URL */
+address a {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none;
+}
+
+/* Hover website URL */
+address a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+/* Visited link */
+address a:visited {
+    color: #8888aa;
+    font-style: italic;
+}
+
+/* Custom sentence */
+.sentence {
+    font-style: italic;
+}
+
+/* Custom paragraph */
+.intro {
+    text-indent: 2em;
+}
