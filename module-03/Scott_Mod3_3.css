@@ -23,22 +23,48 @@ ul {
     list-style-type: upper-roman;
 }
 
+a {
+    color: #003366; /* dark blue */
+    text-decoration: none;
+}
+
 a:hover {
+    color: #0055aa; /* medium blue */
     text-decoration: underline;
 }
 
-.flex-row {
-    display: flex;
-    justify-content: space-between;
+a:visited {
+    color: #551a8b; /* purple */
+}
+
+.columns-wrapper {
+    margin-bottom: 20px;
 }
 
 .left-column, .right-column {
     width: 45%;
+    float: left;
 }
 
-.bottom-link {
+.left-column {
+    margin-right: 5%; /* Creates the gap between the two columns */
+}
+
+/* Clear float after the columns */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.bottom-link-wrapper {
+    clear: both;
     width: 100%;
     margin-top: 60%;
-    float: right;
     margin-bottom: 20px;
+    /* The wrapper itself does NOT float, allowing it to be 100% width */
+}
+
+.bottom-link-wrapper a {
+    float: right; /* The link itself floats to the right within its 100% wide parent */
 }
