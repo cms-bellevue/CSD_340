@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+ol, ul {
+    font-weight: 300;
+    padding: 10px;
+    list-style-position: inside;
+}
+
+ol {
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+    list-style-type: upper-roman;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    width: 45%;
+}
+
+.bottom-link {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
