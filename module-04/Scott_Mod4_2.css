@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    color: rgba(25, 111, 194, 0.85); /* Rich blue */
+}
+
+/* Image gallery grid */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 10%;
+}
+
+/* This adds a Cornflower blue border to the <h3> headings inside each gallery item.
+   While the assignment instructions don’t explicitly require a border,
+   it's included here for a visual enhancement and can be removed if needed. */
+.gallery-item {
+    border: 2px solid rgba(100, 149, 237, 0.9); /* Cornflower blue */
+    padding: 8px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+/* Gallery item titles */
+.gallery-item h3 {
+    text-align: center;
+    color: rgba(220, 20, 60, 0.9); /* Crimson */
+}
+
+/* Figure styling */
+figure {
+    text-align: center;
+}
+
+/* Standardized image sizing for vertical alignment */
+figure img {
+    height: 300px; /* Consistent height for all images */
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle black shadow */
+}
+
+/* Image captions */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(60, 120, 60, 0.85); /* Muted green */
+}
+
+/* Fixed-position wrapper that pins the "Return to Landing Page" link to the
+   bottom-right corner of the viewport, regardless of page content */
+.bottom-link-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    margin: 0;
+}
+
+.bottom-link-wrapper a {
+    float: none;
+    text-decoration: none;
+}
