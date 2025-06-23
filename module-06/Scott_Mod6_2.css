@@ -1,0 +1,112 @@
+/* Global Settings */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  background-color: #F8F8F8; /* Light gray */
+}
+
+h1 {
+  font-weight: 400;
+}
+
+/* Header */
+header {
+  background-color: #002868; /* Navy Blue */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Bar */
+#navbar {
+  overflow: hidden;
+  background-color: #BF0A30; /* Red */
+  border-bottom: 15px solid #BB2528; /* Deep Red */
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #D6E4F0; /* Light Blue */
+  color: #002868; /* Navy Blue */
+}
+
+/* Main Container */
+#container {
+  margin: 2% 5% 0 5%;
+  padding: 10px;
+}
+
+/* Card Layout */
+.card {
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  color: #BF0A30; /* Red */
+  padding: 10px 0;
+}
+
+.card-content {
+  padding: 2px 16px;
+}
+
+.card-content ol li {
+  margin-bottom: 8px;
+}
+
+.card-content a {
+  color: #002868; /* Navy Blue */
+  text-decoration: underline;
+}
+
+.card-content a:hover {
+  color: #BF0A30; /* Red on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #002868; /* Navy Blue */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+footer p {
+  color: white;
+  font-weight: 400;
+  font-style: italic;
+  float: right;
+  padding-right: 10px;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
