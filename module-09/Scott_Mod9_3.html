@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment 9.3: JavaScript - Part 1">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bellevue University, Clint Scott, Assignment 9.3">
+    <meta name="author" content="Clint Scott">
+    <meta name="robots" content="nofollow">
+    <link href="Scott_Mod9_3.css" type="text/css" rel="stylesheet">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <script>
+        var span1Value = "coffee";
+        var span2Value = "server";
+        var span3Value = "keyboard";
+        var span4Value = "debugging";
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <h2>A Day in the Life</h2>
+
+        <p class="intro">
+            Every morning starts the same: strong <span id="span1">__________</span>, sleepy eyes, and a quick check of emails. The silence before the storm is my moment of peace, but it never lasts long. 
+        </p>
+
+        <p>
+            By 8 AM, I'm already troubleshooting a <span id="span2">__________</span>  issue reported by one of our developers. The ticket queue never sleeps, and neither does production. I thrive on the rush; the methodical chaos suits me.
+        </p>
+
+        <p>
+            I glance down at my <span id="span3">__________</span>, typing away as I bounce between PowerShell scripts and system logs. Amidst the noise, I find the issue: a misconfigured policy buried deep within the system; another win for <span id="span4">__________</span>.
+        </p>
+
+        <p>
+            <button type="button" onclick="document.getElementById('span1').innerHTML = span1Value">Reveal 1</button>
+            <button type="button" onclick="document.getElementById('span2').innerHTML = span2Value">Reveal 2</button>
+            <button type="button" onclick="document.getElementById('span3').innerHTML = span3Value">Reveal 3</button>
+            <button type="button" onclick="document.getElementById('span4').innerHTML = span4Value">Reveal 4</button>
+        </p>
+
+        <hr>
+
+        <address>
+            <p><a href="https://www.bellevue.edu/" target="_blank">Bellevue University</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, Nebraska 68005</p>
+        </address>
+    </div>
+</body>
+</html>
