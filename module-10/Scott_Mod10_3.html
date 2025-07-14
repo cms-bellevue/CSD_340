@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="description" content="Assignment 10.3: JavaScript - Part 2">
+  <meta  name="keywords" content="HTML, CSS, JavaScript, Bellevue University, Clint Scott, Assignment 10.3">
+  <meta  name="author" content="Clint Scott">
+  <meta  name="robots" content="nofollow">  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+  <div class="centered">
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <p>Click an image to see the transformation!</p>
+    <div class="image-container">
+      <div class="left-image">
+        <img src="images/banner.jpg" alt="Bruce Banner" class="thumbnail"
+             data-original="images/banner.jpg"
+             data-alt="images/hulk.jpg"
+             onclick="transform(this)" title="Click to transform into the Hulk">
+      </div>
+      <div class="right-image">
+        <img src="images/constructicons.jpg" alt="Transformers Constructicons" class="thumbnail"
+             data-original="images/constructicons.jpg"
+             data-alt="images/devastator.jpg"
+             onclick="transform(this)" title="Click to transform into vehicle">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
