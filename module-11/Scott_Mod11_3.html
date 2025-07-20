@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Assignment 11.2: JavaScript - Part 3">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bellevue University, Clint Scott, Assignment 11.2">
+  <meta name="author" content="Clint Scott">
+  <meta name="robots" content="nofollow">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+  <header>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+  </header>
+  <div class="container">
+    <div class="instructions">
+      <h3>This is an interactive To Do List.</h3>
+      <ul>
+        <li>Type in your first item in the text box, then click Add.</li>
+        <li>Click the Display button to see current items in the list.</li>
+        <li>Click on Delete Last Entry if you'd like to remove the last entry.</li>
+      </ul>
+    </div>
+	<div class="input-group">
+	  <input type="text" id="itemInput" placeholder="Enter item">
+	  <button onclick="addItem()">Add</button>
+	  <button onclick="displayItems()">Display</button>
+	</div>
+	<div class="input-group">
+	  <button onclick="deleteLast()">Delete Last Entry</button>
+	  <button onclick="openDeletePopup()">Delete Selected Item(s)</button>
+	</div>
+    <hr>
+    <div id="output" class="output"></div>
+  </div>
+  <!-- Added Optional Homework Step: Modal for Deleting Selected Items -->
+  <div id="deletePopup" class="modal">
+    <div class="modal-content">
+      <h3>Select item(s) to delete:</h3>
+      <form id="deleteForm"></form>
+      <div class="modal-buttons">
+        <button type="button" onclick="confirmDeleteSelected()">Confirm Delete</button>
+        <button type="button" onclick="closeDeletePopup()">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Scott</p>
+    <p><a href="../index.html">Back to Landing Page</a></p>
+  </footer>
+</body>
+</html>
