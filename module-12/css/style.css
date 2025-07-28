@@ -11,10 +11,6 @@ h1 {
   font-weight: 400;
 }
 
-h3 {
-  font-weight: 500;
-}
-
 /* Header */
 header {
   background-color: #002868;
@@ -25,6 +21,7 @@ header {
 
 /* Layout Containers */
 .container {
+  font-weight: bold;	
   padding: 20px;
   text-align: left;
 }
@@ -39,6 +36,16 @@ header {
 .left-column,
 .right-column {
   width: 45%;
+  border-radius: 15px;  
+  padding: 10px;
+}
+
+.left-column {
+  border: 2px solid red;
+}
+
+.right-column {
+  border: 2px dashed red;
 }
 
 .clearfix::after {
@@ -47,32 +54,26 @@ header {
   display: table;
 }
 
-/* List Styles */
-ol,
 ul {
-  font-weight: 300;
-  padding: 10px;
-}
-
-ol {
-  border: 1px solid red;
-  border-radius: 15px;
-  list-style-position: inside;
-}
-
-ul {
-  border: 1px dashed red;
-  border-radius: 15px;
   list-style-position: outside;
   list-style-type: upper-roman;
   padding-left: 30px;
 }
 
+ul li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
 #bookList {
-  border: 1px solid red;
   border-radius: 15px;
   list-style-type: none;
   padding: 10px;
+}
+
+#bookList li {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 /* Buttons */
