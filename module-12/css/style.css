@@ -21,6 +21,8 @@ header {
 
 /* Layout Containers */
 .container {
+  width: 1000px;
+  margin: 0 auto;
   font-weight: bold;	
   padding: 20px;
   text-align: left;
