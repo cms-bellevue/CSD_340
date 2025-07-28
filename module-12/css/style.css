@@ -75,17 +75,6 @@ ul {
   padding: 10px;
 }
 
-/* Link Styles */
-a {
-  color: #003366;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #0055aa;
-  text-decoration: underline;
-}
-
 /* Buttons */
 button {
   background-color: #002868;
